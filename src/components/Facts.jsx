@@ -2,11 +2,12 @@ import React from 'react';
 
 const Facts = () => {
 
-    const content = [
-        {
-            
-        }
-    ]
+  const content = [
+    { pix: "bi-emoji-smile", nbr: 232, name: "Happy Clients" },
+    { pix: "bi-journal-richtext", nbr: 521, name: "Projects" },
+    { pix: "bi-headset", nbr: 1463, name: "Hours Of Support" },
+    { pix: "bi-award", nbr: 25, name: "Awards" },
+  ];
     return (
         <div>
             <section id="facts" className="facts">
@@ -18,16 +19,16 @@ const Facts = () => {
     </div>
 
     <div className="row">
-
-      <div className="col-lg-3 col-md-6">
+    {content.map((item, index) => ( 
+      <div key={index} className="col-lg-3 col-md-6">
         <div className="count-box">
-          <i className="bi bi-emoji-smile"></i>
-          <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" className="purecounter"></span>
-          <p>Happy Clients</p>
+          <i className={`bi ${item.pix}`}></i>
+          <span data-purecounter-start="0" data-purecounter-end={item.nbr} data-purecounter-duration="1" className="purecounter"></span>
+          <p>{item.name}</p>
         </div>
       </div>
-
-      <div className="col-lg-3 col-md-6 mt-5 mt-md-0">
+           ))}
+      {/* <div className="col-lg-3 col-md-6 mt-5 mt-md-0">
         <div className="count-box">
           <i className="bi bi-journal-richtext"></i>
           <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" className="purecounter"></span>
@@ -49,7 +50,7 @@ const Facts = () => {
           <span data-purecounter-start="0" data-purecounter-end="25" data-purecounter-duration="1" className="purecounter"></span>
           <p>Awards</p>
         </div>
-      </div>
+      </div> */}
 
     </div>
 
