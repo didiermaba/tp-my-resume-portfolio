@@ -1,6 +1,12 @@
 import React from 'react';
 
 const Facts = () => {
+
+    const content = [
+        {
+            
+        }
+    ]
     return (
         <div>
             <section id="facts" className="facts">
