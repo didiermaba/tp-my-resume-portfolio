@@ -1,15 +1,15 @@
-import React from 'react';
-import Header from './components/Header';
-import Hero from './components/Hero';
-import About from './components/About';
-import Facts from './components/Facts';
-import Skills from './components/Skills';
-import Resume from './components/Resume';
-import Portfolio from './components/Portfolio';
-import Services from './components/Services';
-import Testimonials from './components/Testimonials';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
+import React from "react";
+import Header from "./components/Header";
+import Hero from "./components/Hero";
+import About from "./components/About";
+import Facts from "./components/Facts";
+import Skills from "./components/Skills";
+import Resume from "./components/Resume";
+import Portfolio from "./components/Portfolio";
+import Services from "./components/Services";
+import Testimonials from "./components/Testimonials";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
@@ -17,31 +17,29 @@ const App = () => {
       <Header />
       <Hero />
       <main id="main">
+        {/* <!-- ======= About Section ======= --> */}
+        <About />
 
-{/* <!-- ======= About Section ======= --> */}
-     <About />
+        {/* <!-- ======= Facts Section ======= --> */}
+        <Facts />
 
-{/* <!-- ======= Facts Section ======= --> */}
-     <Facts />
+        {/* <!-- ======= Skills Section ======= --> */}
+        <Skills />
 
-{/* <!-- ======= Skills Section ======= --> */}
-     <Skills />
+        {/* <!-- ======= Resume Section ======= --> */}
+        <Resume />
+        {/* <!-- ======= Portfolio Section ======= --> */}
+        <Portfolio />
+        {/* <!-- ======= Services Section ======= --> */}
+        <Services />
 
-{/* <!-- ======= Resume Section ======= --> */}
-     <Resume />
-{/* <!-- ======= Portfolio Section ======= --> */}
-     <Portfolio />
-{/* <!-- ======= Services Section ======= --> */}
-     <Services />
+        {/* <!-- ======= Testimonials Section ======= --> */}
+        <Testimonials />
 
-{/* <!-- ======= Testimonials Section ======= --> */}
-     <Testimonials />
-
-{/* <!-- ======= Contact Section ======= --> */}
-     <Contact />
-
-              </main>
-     <Footer />
+        {/* <!-- ======= Contact Section ======= --> */}
+        <Contact />
+      </main>
+      <Footer />
     </div>
   );
 };
